@@ -1,0 +1,2 @@
+# Brandtec
+Thetechnologyofbranding.com
