@@ -67,14 +67,14 @@ for (let i = 0; i < videoURLs.length; i++) {
 //#region Initialize Scene
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff);
+scene.background = new THREE.Color(0xeeeeee); // white 0xffffff
 
 const sizes = {
     width: canvas.clientWidth,
     height: canvas.clientHeight
 };
 
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
+const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.1, 500); //75 100
 camera.position.set(0, 0, 8.0);
 scene.add(camera);
 
