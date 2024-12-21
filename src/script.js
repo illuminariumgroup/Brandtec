@@ -16,7 +16,7 @@ const ControlProperties = {
 //images
 const textureLoader = new THREE.TextureLoader();
 
-const HomeImage = textureLoader.load(new URL('./assets/img/home.jpeg', import.meta.url).toString());
+const HomeImage = textureLoader.load(new URL('./assets/img/home2.png', import.meta.url).toString());
 
 //new images
 const image1 = textureLoader.load(new URL('./assets/img/10Picture32.png', import.meta.url).toString());
