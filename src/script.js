@@ -125,6 +125,7 @@ for (let i = 0; i < mainTextures.length; i++) {
 }
 
 planes[0].position.set(-10.0, 6.5, 0.0);
+
 planes[1].position.set(-11.0, 3.0, 0.0);
 planes[1].scale.set(0.45, 0.45, 0.0);
 planes[2].position.set(-9.0, 3.0, 0.0);
@@ -141,6 +142,9 @@ planes[7].position.set(6.5, 6.5, 0.0);
 planes[7].scale.set(0.45, 0.45, 0.0);
 planes[8].position.set(10.0, 10.0, 0.0);
 planes[8].scale.set(0.45, 0.45, 0.0);
+
+planes[9].position.set(20.0, 20.0, 0.0);
+planes[9].scale.set(0.45, 0.45, 0.0);
 
 //#endregion
 
