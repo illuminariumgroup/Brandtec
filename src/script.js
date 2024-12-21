@@ -18,15 +18,17 @@ const textureLoader = new THREE.TextureLoader();
 
 const HomeImage = textureLoader.load(new URL('./assets/img/home.jpeg', import.meta.url).toString());
 
-const image1 = textureLoader.load(new URL('./assets/img/bathrobe.jpg', import.meta.url).toString());
-const image2 = textureLoader.load(new URL('./assets/img/Screenshot1.jpg', import.meta.url).toString());
-const image3 = textureLoader.load(new URL('./assets/img/Screenshot2.jpg', import.meta.url).toString());
-const image4 = textureLoader.load(new URL('./assets/img/Screenshot3.jpg', import.meta.url).toString());
-const image5 = textureLoader.load(new URL('./assets/img/Render1a.jpg', import.meta.url).toString());
-const image6 = textureLoader.load(new URL('./assets/img/STL_Cap_Final_Cool_HI_res.jpg', import.meta.url).toString());
-const image7 = textureLoader.load(new URL('./assets/img/STL_FACE_final_sj_new.jpg', import.meta.url).toString());
-const image8 = textureLoader.load(new URL('./assets/img/STL_chilll_blue_final.jpg', import.meta.url).toString());
-const image9 = textureLoader.load(new URL('./assets/img/STL_hero_logo_Embroidery.jpg', import.meta.url).toString());
+//new images
+const image1 = textureLoader.load(new URL('./assets/img/10Picture32.png', import.meta.url).toString());
+const image2 = textureLoader.load(new URL('./assets/img/10Picture33.png', import.meta.url).toString());
+const image3 = textureLoader.load(new URL('./assets/img/12Picture37.png', import.meta.url).toString());
+const image4 = textureLoader.load(new URL('./assets/img/1Picture4.png', import.meta.url).toString());
+const image5 = textureLoader.load(new URL('./assets/img/1Picture5.png', import.meta.url).toString());
+const image6 = textureLoader.load(new URL('./assets/img/1Picture6.png', import.meta.url).toString());
+const image7 = textureLoader.load(new URL('./assets/img/2Picture7.png', import.meta.url).toString());
+const image8 = textureLoader.load(new URL('./assets/img/2Picture9.png', import.meta.url).toString());
+const image9 = textureLoader.load(new URL('./assets/img/3Picture10.png', import.meta.url).toString());
+
 const RoundedSqMask = textureLoader.load(new URL('./assets/img/RoundedSquare.png', import.meta.url).toString());
 
 //videos
