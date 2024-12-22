@@ -74,7 +74,7 @@ const sizes = {
     height: canvas.clientHeight
 };
 
-const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.5, 1000); 
+const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, 0.5, 1000); 
 camera.position.set(0, 0, 8.0);
 scene.add(camera);
 
