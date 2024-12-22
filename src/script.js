@@ -173,8 +173,8 @@ const textOptions = {
     width: 1024,
     height: 256,
     backgroundColor: 'white', // You can set this to any color or keep it transparent
-    textColor: '#000000', // Red text
-    font: '42px Arial', // Larger font size
+    textColor: '#eeeeee', // Red text
+    font: '48px Arial', // Larger font size
     textAlign: 'center',
     textBaseline: 'middle'
 };
@@ -186,7 +186,7 @@ const textPlane = new THREE.Mesh(planeGeometry, textPlaneMaterial);
 textPlane.material.uniforms._mainTex.value = textTexture;
 textPlane.material.uniforms._mainTex.needsUpdate = true;
 textPlane.material.uniforms._isScroll.value = true;
-textPlane.material.uniforms._scrollSpeed.value = 0.2;
+textPlane.material.uniforms._scrollSpeed.value = 0.1;
 textPlane.position.set(0.0, 4.2, 0.0);
 textPlane.scale.set(2.5, 0.4, 0.0);
 scene.add(textPlane)
@@ -211,7 +211,7 @@ const targetPosition = new THREE.Vector3(camera.position.x, camera.position.y, c
 
 // Parameters for smoothing
 const dampingFactor = 0.03; // Adjust for smoothing speed
-const panMultiplier = 0.05; // Adjust to control how fast the camera pans per pixel movement
+const panMultiplier = 0.03; // Adjust to control how fast the camera pans per pixel movement
 
 // Mouse dragging variables
 let isDragging = false;
