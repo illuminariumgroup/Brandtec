@@ -67,7 +67,7 @@ for (let i = 0; i < videoURLs.length; i++) {
 //#region Initialize Scene
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xffffff); 
+scene.background = new THREE.Color(0xeeeeee); 
 
 const sizes = {
     width: canvas.clientWidth,
