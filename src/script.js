@@ -143,6 +143,9 @@ planes[7].scale.set(0.45, 0.45, 0.0);
 planes[8].position.set(10.0, 10.0, 0.0);
 planes[8].scale.set(0.45, 0.45, 0.0);
 
+planes[9].position.set(16.0, 12.0, 0.0);
+planes[9].scale.set(0.45, 0.45, 0.0);
+
 //#endregion
 
 //#region home and text planes
