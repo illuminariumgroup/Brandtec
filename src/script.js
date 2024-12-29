@@ -28,6 +28,7 @@ const image6 = textureLoader.load(new URL('./assets/img/4Picture13.png', import.
 const image7 = textureLoader.load(new URL('./assets/img/2Picture9.png', import.meta.url).toString());
 const image8 = textureLoader.load(new URL('./assets/img/2Picture7.png', import.meta.url).toString());
 const image9 = textureLoader.load(new URL('./assets/img/7Picture24.png', import.meta.url).toString());
+const image10 = textureLoader.load(new URL('./assets/img/5Picture17.png', import.meta.url).toString());
 
 const RoundedSqMask = textureLoader.load(new URL('./assets/img/RoundedSquare.png', import.meta.url).toString());
 
@@ -90,7 +91,7 @@ renderer.shadowMap.enabled = true;
 
 //#region Multiple image/video Planes Setup
 
-const mainTextures = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+const mainTextures = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
 const planes = [];
 const planeGeometry = new THREE.PlaneGeometry(5, 5, 30, 30);
@@ -142,6 +143,10 @@ planes[7].position.set(6.5, 6.5, 0.0);
 planes[7].scale.set(0.45, 0.45, 0.0);
 planes[8].position.set(10.0, 10.0, 0.0);
 planes[8].scale.set(0.45, 0.45, 0.0);
+
+//9 is 10
+planes[9].position.set(12.0, 12.0, 0.0);
+planes[9].scale.set(0.35, 0.35, 0.0);
 
 //#endregion
 
