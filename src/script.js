@@ -102,9 +102,6 @@ const mainTextures = [image1, image2, image3, image4, image5, image6, image7, im
 const planes = [];
 const planeGeometry = new THREE.PlaneGeometry(5, 5, 30, 30);
 
-//adding my own
-const planeGeometry1 = new THREE.PlaneGeometry(10, 5, 30, 30);
-
 for (let i = 0; i < mainTextures.length; i++) {
     const shaderUniforms = {
         _mainTex: { value: mainTextures[i] },
@@ -216,7 +213,7 @@ textPlane.position.set(0.0, 4.2, 0.0);
 textPlane.scale.set(0.5, 0.4, 0.0);
 scene.add(textPlane)
 
-// trying out autosizing planes to image fit
+/* trying out autosizing planes to image fit
 const texture = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 texture.image.onload = () => {
     const width = texture.image.width;
@@ -229,13 +226,8 @@ texture.image.onload = () => {
     scene.add(plane);
     planes[plane].position.set(-20.0, 3.0, 0.0);
     planes[plane].scale.set(0.15, 0.15, 0.0);
-};
+};*/
 
-//add my own plane
-const textPlane2 = new THREE.Mesh(planeGeometry1, textPlaneMaterial);
-textPlane2.position.set(5.0, 4.2, 0.0);
-textPlane2.scale.set(7.5, 0.4, 0.0);
-scene.add(textPlane2)
 
 //#endregion
 
