@@ -213,20 +213,20 @@ textPlane.position.set(0.0, 4.2, 0.0);
 textPlane.scale.set(0.5, 0.4, 0.0);
 scene.add(textPlane)
 
-/* trying out autosizing planes to image fit
-const texture = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
-texture.image.onload = () => {
-    const width = texture.image.width;
-    const height = texture.image.height;
-    const aspectRatio = width/height;
+// trying out autosizing planes to image fit
+const texture123 = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+texture123.image.onload = () => {
+    const width123 = texture123.image.width;
+    const height123 = texture123.image.height;
+    const aspectRatio123 = width123/height123;
     // create a plane that matches the image's size
-    const planeGeometry = new THREE.PlaneGeometry(aspectRatio, 1);
-    const material = new THREE.MeshBasicMaterial({ map: texture });
-    const plane = new THREE.Mesh(planeGeometry, material);
-    scene.add(plane);
-    planes[plane].position.set(-20.0, 3.0, 0.0);
-    planes[plane].scale.set(0.15, 0.15, 0.0);
-};*/
+    const planeGeometry123 = new THREE.PlaneGeometry(aspectRatio123, 1);
+    const material123 = new THREE.MeshBasicMaterial({ map: texture123 });
+    const plane123 = new THREE.Mesh(planeGeometry123, material123);
+    plane123.position.set(-20.0, 3.0, 0.0);
+    plane123.scale.set(0.15, 0.15, 0.0);
+    scene.add(plane123);
+};
 
 
 //#endregion
