@@ -155,13 +155,13 @@ planes[9].position.set(12.0, 12.0, 0.0);
 planes[9].scale.set(0.35, 0.35, 0.0);
 
 //fiddlers_f
-planes[10].position.set(-20.0, 2.0, 0.0);
+planes[10].position.set(-20.0, 3.0, 0.0);
 planes[10].scale.set(0.45, 0.45, 0.0);
-planes[11].position.set(-16.0, 4.0, 0.0);
+planes[11].position.set(-15.0, 4.0, 0.0);
 planes[11].scale.set(0.35, 0.35, 0.0);
 planes[12].position.set(-23.0, 5.0, 0.0);
 planes[12].scale.set(0.55, 0.55, 0.0);
-planes[13].position.set(-12.0, 8.0, 0.0);
+planes[13].position.set(-22.0, 12.0, 0.0);
 planes[13].scale.set(0.25, 0.25, 0.0);
 planes[14].position.set(-23.0, 1.0, 0.0);
 
