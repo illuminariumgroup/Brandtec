@@ -36,6 +36,22 @@ const image13 = textureLoader.load(new URL('./assets/img/fiddlers_f/170x340_Fidd
 const image14 = textureLoader.load(new URL('./assets/img/fiddlers_f/325x150_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 const image15 = textureLoader.load(new URL('./assets/img/fiddlers_f/350x350_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 
+const texture = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+texture.image.onload = () => {
+    const width = texture.image.width;
+    const height = texture.image.height;
+    const aspectRatio = width/height;
+    // create a plane that matches the image's size
+    const planeGeometry = new THREE.PlaneGeometry(aspectRatio, 1);
+    const material = new THREE.MeshBasicMaterial({ map: texture });
+    const plane = new THREE.Mesh(planeGeometry, material);
+    scene.add(plane);
+    planes[plane].position.set(-20.0, 3.0, 0.0);
+    planes[plane].scale.set(0.15, 0.15, 0.0);
+};
+
+
+
 const RoundedSqMask = textureLoader.load(new URL('./assets/img/RoundedSquare.png', import.meta.url).toString());
 
 //videos
