@@ -29,6 +29,12 @@ const image7 = textureLoader.load(new URL('./assets/img/2Picture9.png', import.m
 const image8 = textureLoader.load(new URL('./assets/img/2Picture7.png', import.meta.url).toString());
 const image9 = textureLoader.load(new URL('./assets/img/7Picture24.png', import.meta.url).toString());
 const image10 = textureLoader.load(new URL('./assets/img/5Picture17.png', import.meta.url).toString());
+//fiddlers_f
+const image11 = textureLoader.load(new URL('./assets/img/fiddlers_f/150x150_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+const image12 = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+const image13 = textureLoader.load(new URL('./assets/img/fiddlers_f/170x340_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+const image14 = textureLoader.load(new URL('./assets/img/fiddlers_f/325x150_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+const image15 = textureLoader.load(new URL('./assets/img/fiddlers_f/350x350_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 
 const RoundedSqMask = textureLoader.load(new URL('./assets/img/RoundedSquare.png', import.meta.url).toString());
 
@@ -91,7 +97,7 @@ renderer.shadowMap.enabled = true;
 
 //#region Multiple image/video Planes Setup
 
-const mainTextures = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
+const mainTextures = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15];
 
 const planes = [];
 const planeGeometry = new THREE.PlaneGeometry(5, 5, 30, 30);
@@ -147,6 +153,18 @@ planes[8].scale.set(0.45, 0.45, 0.0);
 //9 is 10
 planes[9].position.set(12.0, 12.0, 0.0);
 planes[9].scale.set(0.35, 0.35, 0.0);
+
+//fiddlers_f
+planes[10].position.set(-12.0, 2.0, 0.0);
+planes[10].scale.set(0.35, 0.35, 0.0);
+planes[11].position.set(-12.0, 4.0, 0.0);
+planes[11].scale.set(0.45, 0.45, 0.0);
+planes[12].position.set(-12.0, 6.0, 0.0);
+planes[12].scale.set(0.55, 0.55, 0.0);
+planes[13].position.set(-12.0, 8.0, 0.0);
+planes[13].scale.set(0.65, 0.65, 0.0);
+planes[14].position.set(-12.0, 10.0, 0.0);
+planes[14].scale.set(0.75, 0.75, 0.0);
 
 //#endregion
 
