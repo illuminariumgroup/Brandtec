@@ -227,7 +227,7 @@ textPlane.material.uniforms._mainTex.needsUpdate = true;
 textPlane.material.uniforms._isScroll.value = true;
 textPlane.material.uniforms._scrollSpeed.value = 0.1;
 textPlane.position.set(0.0, 4.2, 0.0);
-textPlane.scale.set(1.0, 0.4, 0.0);
+textPlane.scale.set(1.0, 0.1, 0.0);
 scene.add(textPlane)
 
 //#endregion
