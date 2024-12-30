@@ -36,6 +36,20 @@ const image13 = textureLoader.load(new URL('./assets/img/fiddlers_f/170x340_Fidd
 const image14 = textureLoader.load(new URL('./assets/img/fiddlers_f/325x150_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 const image15 = textureLoader.load(new URL('./assets/img/fiddlers_f/350x350_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 
+const texturenew = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
+texturenew.image.onload = () => {
+    const widthnew = texturenew.image.width;
+    const heightnew = texturenew.image.height;
+    const aspectRatioNew = widthnew / heightnew;
+    const planeGeometryNew = new THREE.PlaneGeometry(aspectRatioNew, 1);
+    const materialnew = new THREE.MeshBasicMaterial({ map: texturenew });
+    const planenew = new THREE.Mesh(planeGeometryNew, materialnew)'
+    scene.add(planenew);
+}
+
+
+
+
 const RoundedSqMask = textureLoader.load(new URL('./assets/img/RoundedSquare.png', import.meta.url).toString());
 
 //videos
@@ -101,7 +115,7 @@ const mainTextures = [image1, image2, image3, image4, image5, image6, image7, im
 
 const planes = [];
 const planeGeometry = new THREE.PlaneGeometry(5, 5, 30, 30);
-
+    
 for (let i = 0; i < mainTextures.length; i++) {
     const shaderUniforms = {
         _mainTex: { value: mainTextures[i] },
