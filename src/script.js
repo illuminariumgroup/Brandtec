@@ -36,6 +36,7 @@ const image13 = textureLoader.load(new URL('./assets/img/fiddlers_f/170x340_Fidd
 const image14 = textureLoader.load(new URL('./assets/img/fiddlers_f/325x150_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 const image15 = textureLoader.load(new URL('./assets/img/fiddlers_f/350x350_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 
+/* doesnt work
 const texturenew = textureLoader.load(new URL('./assets/img/fiddlers_f/167x275_Fiddlers_Ingreds_F.png', import.meta.url).toString());
 texturenew.image.onload = () => {
     const widthnew = texturenew.image.width;
@@ -45,7 +46,7 @@ texturenew.image.onload = () => {
     const materialnew = new THREE.MeshBasicMaterial({ map: texturenew });
     const planenew = new THREE.Mesh(planeGeometryNew, materialnew)'
     scene.add(planenew);
-}
+} */
 
 
 
