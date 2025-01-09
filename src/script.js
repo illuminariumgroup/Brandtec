@@ -122,8 +122,8 @@ for (let i = 0; i < mainTextures.length; i++) {
         _mainTex: { value: mainTextures[i] },
         _maskTex: { value: RoundedSqMask },
         _objPos: { value: new THREE.Vector3() },
-        _curvatureStrength: { value: 0.1 },
-        _imageSlideSterngth: { value: 0.01 },
+        _curvatureStrength: { value: 0.2 },
+        _imageSlideSterngth: { value: 0.02 },
         _isScroll: { value: false},
         _aspectRatio: { value: ControlProperties.imageAspectRatio },
     };
