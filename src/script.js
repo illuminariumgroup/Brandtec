@@ -10,7 +10,7 @@ const ControlProperties = {
     isCameraAnimating: false, // do not modify this
     imageAspectRatio: 1.0,
     videoAspectRatio: 1.77,
-    ZoomDist: 9.0
+    ZoomDist: 1.5
 };
 
 //images
@@ -96,7 +96,7 @@ const sizes = {
     height: canvas.clientHeight
 };
 
-const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, 0.5, 1000); 
+const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, 0.75, 2000); 
 camera.position.set(0, 0, 8.0);
 scene.add(camera);
 
