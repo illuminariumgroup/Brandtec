@@ -10,7 +10,7 @@ const ControlProperties = {
     isCameraAnimating: false, // do not modify this
     imageAspectRatio: 1.0,
     videoAspectRatio: 1.77,
-    ZoomDist: 3.0
+    ZoomDist: 9.0
 };
 
 //images
